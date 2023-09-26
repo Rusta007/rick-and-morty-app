@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Use a preferred font family */
+  background-color: #272b33;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  box-shadow: 0px 2px 3px #cdcde9;
+  padding: 10px 20px; /* Add padding to the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Adjust the text color */
+}
+
+.navbar-logo img {
+  width: 60px;
+  margin-right: 10px; /* Add some spacing between the image and text */
+}
+
+.titleNav {
+  font-size: 24px; /* Adjust the font size */
+  font-family: cursive;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Add spacing between input and button */
+  font-size: 16px; /* Adjust the font size */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Change button color */
+  color: #fff; /* Change button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.search-bar button:hover {
+  background-color: #0056b3; /* Change button color on hover */
+}
+.character-card {
+  width: 500px;
+}
+/* Add styles for the character grid */
+.character-grid,
+.character-details {
+  background-color: #272b33;
+  margin-top: -9px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 45px;
+}
+.character-details {
+  text-align: center;
+  /* height: 100vh; */
+}
+.cards {
+  padding-right: 15px;
+  border-radius: 10px;
+  display: flex;
+  background: #52555b;
+  margin: 10px 0px;
+  width: 500px;
+}
+.ImageOfChar {
+  border-radius: 10px 0 0 10px;
+  width: 213px;
+  border-radius: 10px;
+  text-align: center;
+  padding-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+.NameOfChar {
+  color: white;
+  font-size: 30px;
+}
+.NameOfSpecies {
+  color: white;
+}
+.NameOfChar,
+.NameOfSpecies {
+  margin: auto;
+  color: white;
+}
+.NameOfChar:hover,
+.NameOfSpecies:hover {
+  color: rgb(255, 152, 0);
+}
+.cardAllDetails {
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 16px;
+  background: white;
+}
+.firstSeen {
+  color: #272b33;
+}
+.NameOfStatus {
+  color: white;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  margin: 2px 0px 0px;
+}
+.ImageDetails {
+  border-radius: 17px 17px 0px 0px;
+}
+.scroll-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-icon {
+  background-color: #272b33;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.scroll-icon:hover {
+  background-color: #333742;
+}
+
+/* Style the icon (Font Awesome) */
+.scroll-icon i {
+  font-size: 20px;
+}
+.loadMore {
+  text-align: center;
+  padding: 5px 17px;
+  font-size: 20px;
+  font-family: fangsong;
+  cursor: pointer;
+}
+.EpisodeImg {
+  padding: 10px 0px;
+  border-radius: 50%;
+  width: 75%;
+  height: 58%;
+  margin-inline-start: 0px;
+}
+dd {
+  margin-inline-start: 0px;
+}
+.title {
+  margin: 10px;
+  font-size: 21px;
+  font-family: cursive;
+  color: #272b33;
+}
+.title:first-child {
+  font-size: 25px;
+  color: rgb(255, 152, 0);
+}
+a {
+  color: #272b33;
+}
+a:hover {
+  color: rgb(255, 152, 0);
+}
+.detailsImg {
+  width: -webkit-fill-available;
+}
+dl{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust the base font size for smaller screens */
+  }
+  .titleNav{
+    display: none;
+  }
+  .search-bar input[type="text"] {
+    margin-right: -77px;
+    
+}
+.cards {
+  text-align: center;
+  /* padding-right: 15px; */
+  border-radius: 10px;
+  display: block;
+  background: #52555b;
+  margin: 10px 0px;
+  width: 90%;
+}
+.ImageOfChar {
+  border-radius: 10px 20px 0px 0px;
+  width: 106%;
+  /* border-radius: 10px; */
+  text-align: center;
+  /* padding-right: 10px; */
+}
+}
